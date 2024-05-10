@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <title>홈페이지 게시판</title>
     <style>
-      body {text-align: center;}
-      table {
+      table {margin: 0 auto;/* 형식 가운데 정렬 */
+            text-align: center;
+            width: 70%; /*전체 가로의 70% 차지*/
+            border: 2px solid violet; /*표 테두리 색상*/ 
+            border-collapse: collapse;
+      } 
+      body {
+        margin: 0 auto;
         text-align: center;
+      }
+      th,td {
+        border: 2px solid violet;
+        text-align: center;
+        padding: 10px; /*몸집 키우기 상 하 좌 우*/
+      }
+      th {
+        background-color: plum; /*배경 색상 채우기*/
+        color: white; /*글자색*/
       }
       .icon {width: 50px;height: 50px;}
     </style>
@@ -41,13 +56,12 @@
             <td>2024-05-06</td>
         </tr>
     </table>
-    <br><br><br>
+    
     <a href="홈페이지메인.html">
-      <img class="icon" src="메인아이콘.png"/>홈페이지 메인으로
-      돌아가기</a>
+      <img class="icon" src="메인아이콘.png"/><br>메인
+    </a>
     <!-- a 태그 동영상게시판 만들기--><br />
-    <a href="동영상게시판.html"
-      ><img class="icon" src="동영상아이콘.png" />동영상 게시판으로 이동하기</a>
+    <a href="동영상게시판.html"><img class="icon" src="동영상아이콘.png" /><br>동영상</a>
 
      
 
