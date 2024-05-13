@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>동영상 게시판</title>
-        <style>
-            .icon {
-                width: 100px;
-                height: 100px;
-            }
-            body{
-                margin: 0 auto;
-                text-align: center;
-            }
-            image {
-                width: 50%;
-                height: 50%;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <p>환영합니다.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>동영상 게시판</title>
+    <style>
+      .동영상 {
+        width: 40%;
+        border-radius: 20px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .icon {
+        width: 100px;
+        height: 100px;
+      }
+      .컨테이너 {
+        margin: 0 auto;
+        width: 60%;
+        background-color: rgb(219, 202, 202);
+      }
+      body {
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgb(40, 54, 66);
+      }
+      image {
+        width: 50%;
+        height: 50%;
+      }
+      .댓글 {
+        background-color: aliceblue;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: blue;
+      }
+      .버튼꾸미기 {
+        display: block;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="컨테이너">
+      <h1>동영상 게시판</h1>
+      <p>환영합니다.</p>
+      <br />
+
+      <video class="동영상" autoplay muted loop>
+        <source src="../비디오들/159948-820010982_tiny.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <video class="동영상" autoplay muted loop>
+        <source
+          src="../비디오들/20770858-hd_1080_1920_30fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <br />
+      <h2>모든 댓글</h2>
+      <div class="댓글들">
+        <div class="댓글">
+          <p>사용자1:</p>
+          <p>블로그 너무 이쁘네요</p>
+        </div>
         <br>
-        
-        <video autoplay muted loop>
-            <source src="C:\Users\user1\frontend-workspace\html\비디오들\182970-869947284_tiny.mp4" type="video/mp4">
-        </video>
+        <div class="댓글">
+          <p>사용자2:</p>
+          <p>들렸다 가요!!</p>
+        </div>
         <br>
-        <video controls>
-            <source src="C:\Users\user1\frontend-workspace\html\비디오들\159948-820010982_tiny.mp4"type="video/mp4">
-        </video>
-        <br>
-        <a href="홈페이지게시판.html">
-            <img class="icon" src="../이미지들/healing.jpg">
-        </a>
-        <p>홈페이지 게시판 돌아가기</p>
-        <br>
-        <a href="홈페이지메인.html">
-            <img class="icon" src="../이미지들/hogam.jpg">
-        </a>
-        <p>홈페이지 메인 돌아가기</p>
-    </body>
+        <div class="댓글">
+          <br />
+          <input type="text" placeholder="아이디를 입력하세요." /><br />
+          <input type="text" placeholder="댓글을 적어주세요 ^^." />
+        </div>
+      </div>
+      <br />
+      <div class="버튼꾸미기">
+      <a href="홈페이지게시판.html">
+        <img class="icon" src="../이미지들/healing.jpg" />
+      </a>
+      <p>홈페이지 게시판 돌아가기</p>
+      <br />
+      <a href="홈페이지메인.html">
+        <img class="icon" src="../이미지들/hogam.jpg" />
+      </a>
+      <p>홈페이지 메인 돌아가기</p>
+    </div>
+  </body>
 </html>
