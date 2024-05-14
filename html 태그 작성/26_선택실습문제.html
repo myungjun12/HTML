@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head> <!--meta title style script link-->
+        <meta charset="UTF-8">
+        <title>점심 메뉴 고르기</title>
+        <style>
+            body {
+                background-color: #e9c2c2;
+            }
+            .컨테이너 {
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+            button {
+                background-color: black;
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                padding: 10px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="컨테이너">
+            <div class="Header">
+                <h2>&#128;점심 메뉴 고르기&#128;</h2>
+                <div class="Main">
+                    <select name="메뉴">
+                        <option>메뉴 선택</option>
+                        <option>한식</option>
+                        <option>중식</option>
+                        <option>양식</option>
+                    </select>
+
+                    <p>추가 작성 내용 : </p>
+                    <textarea rows="6" cols="73"></textarea>
+                    <br>
+                    <button type="submit">선택 완료</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

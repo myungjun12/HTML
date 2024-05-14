@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <style>
+            
+            h1 {text-align: center;}
+           
+            .컨테이너 {
+                margin: 0 auto;
+                text-align: center;
+                background-color: antiquewhite;
+                width: 60%;
+                border-radius: 5px;
+                box-shadow: 0 0 50px  dimgray;
+            }
+
+            body {
+                margin: 0 auto;
+                text-align: center;
+                background-color: gray;
+            }
+
+            input {
+                 border-radius: 5px;
+               }
+
+            button {
+                border-radius: 4px;
+                background-color:   black;
+                padding: 5px 10px;
+                border: none;
+                color: white;
+            }
+            .Address {
+                width: 70%;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="컨테이너">
+        <h1><mark>인적 사항</mark></h1>
+        <form>
+            <label>
+                이름 : <input type="text" name="clientName" placeholder="이름을 입력해주세요">
+            </label>
+            <br><br>
+            <label>
+                나이 : <input type="number" name="clientAge" placeholder="나이를 입력해주세요">
+            </label>
+            <br><br>
+            <label>
+                주민번호 : <input type="password" name="clientPS" placeholder="주민번호 앞자리 입력">
+            </label>
+            <br><br>
+            <label>
+                주소 : <input class="Address" type="text" name="clientAddress" placeholder="주소를 입력해주세요">
+            </label>
+            <h2>혈액형</h2>
+            <label>
+                <input type="radio" name="혈액형" value="A형">A형
+            </label>
+            <label>
+                <input type="radio" name="혈액형" value="B형">B형
+            </label>
+            <label>
+                <input type="radio" name="혈액형" value="O형">O형
+            </label>
+            <label>
+                <input type="radio" name="혈액형" value="AB형">AB형
+            </label>
+            
+            <h2>가족 구성</h2>
+            <label>
+                <input type="checkbox" name="가족구성" value="부">부
+            </label>
+            <label>
+                <input type="checkbox" name="가족구성" value="모">모
+            </label>
+            <label>
+                <input type="checkbox" name="가족구성" value="자녀">자녀
+            </label>
+            <h2>군 전역 여부</h2>
+            <label>
+                <input type="radio" name="군" value="군필">군필
+            </label>
+            <label>
+                <input type="radio" name="군" value="미필">미필
+            </label>
+            <br> <br>
+            <button type="submit">제출하기</button>
+        </form>
+    </div>
+    </body>
+</html>
