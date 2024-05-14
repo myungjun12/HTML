@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            body {
+                background-color: #f9f9f9;
+            }
+            .컨테이너 {
+                width: 80%;
+                margin: 20px auto;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #d7d7d7;
+            }
+            h1 {
+                text-align: center;
+            }
+            input {
+                width: 70%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .정보, form {
+                margin: 10px auto;
+                padding: 10px;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                width: 200px;
+                text-align: center;
+                margin: 0 auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="컨테이너">
+            <h1>배달 주문하기</h1>
+            <form>
+                <div class="정보">
+                    <label>주문번호 : </label>
+                    <input type="number" required readonly value="1"> <!--readonly 입력 불가-->
+                </div>
+               
+                <div class="정보">
+                    <label>사용자 이름 : </label>
+                    <input type="text" required>
+                </div>
+               
+                <div class="정보">
+                    <label>휴대폰번호 : </label>
+                    <input type="number" required>
+                </div>
+               
+                <div class="정보">
+                    <label>이&nbsp;&nbsp;&nbsp;&nbsp;메&nbsp;&nbsp;&nbsp;&nbsp;일 : </label>
+                    <input type="email" required>
+                </div>
+               
+                <div class="정보">
+                    <label>비밀번호 : </label>
+                    <input type="password" required>
+                </div>
+                
+                <div class="정보">
+                    <label>주소 : </label>
+                    <input type="text" required>
+                </div>
+                <button type="submit">배달하기</button>
+            </form>
+        </div>
+    </body>
+</html>
