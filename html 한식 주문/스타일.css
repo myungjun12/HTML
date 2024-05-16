@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+}
+
+.header,.footer {
+    background-color: #303030;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.네비게이션 {
+    background-color: rgb(95, 98, 101);
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+a {
+    text-decoration: none; /*밑줄제거*/
+    color:  dodgerblue; /*글자색 변경*/
+    font-weight: bold; /*글자 표현 두께 변경*/
+}
+body {
+    background-color: #7a7373;
+    text-align: center;
+}
+.특징 {
+    display: inline-block; /*하나의 블록으로 만들어주기*/
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px; /*공간 설정*/
+    box-shadow: 0 0 10px #d7d7d7;
+}
+/* ***** 메뉴.html 에 작성한 stylesheet ***** */
+
+.메인 {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.메뉴 {
+    background-color: rgb(202, 167, 167);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.아이템 {
+    text-align: center;
+}
+.아이템 img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+/* ***** 주문하기.html 에 작성한 stylesheet ***** */
+
+.메인-주문하기 {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto; /*auto 경우 가운데 정렬과 같은 나열을 사용할 때 쓰임*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d7d7d7;
+    display: block;
+}
+
+.메인메뉴 {
+    width: 300px;
+    height: 300px;
+}
+.사이드메뉴 {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+.메인꾸미기 {
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+}
+.사이드메인 {
+    display: flex;
+}
