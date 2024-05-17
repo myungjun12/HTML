@@ -3,87 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>레이아웃 스타일 실습4</title>
+        <link rel="stylesheet" href="08_레이아웃.css">
     </head>
     <body>
         <h1 id="top">레이아웃 스타일 실습4</h1>
-        <style>
-            /*
-            html 태그에도 기본으로 설정된 padding과 margin 있음
-            html 태그에 기본으로 설정된 padding과 margin을 없애기위해 설정해줌
-            */
-            * {
-                padding: 0;
-                margin: 0;
-                /* 박스의 크기를 화면에 표시하는 방식을 변경하는 속성 */
-                box-sizing: border-box;
-            }
-            div {
-                border: 1px solid black;
-            }
-            /* 컨데이터 꾸미기 시작 */
-            .컨테이너 {
-                width: 260px;
-                height: 260px;
-                border: 5px dashed orange;
-                margin: 30px;
-                /* 기준 */
-                position: relative; /*가장 큰 공간 relative 상대적인 공간 설정*/
-            }
-            .일번 {
-                width: 250px;
-                height: 250px;
-                background-color: pink;
-                position: absolute;
-            }
-            .이번 {
-                width: 200px;
-                height: 200px;
-                background-color: green;
-                position: absolute;
-                margin-top: 25px;
-                margin-left: 25px;
-            }
-            .삼번 {
-                width: 100px;
-                height: 100px;
-                background-color: yellow;
-                position: absolute;
-                margin-top: 75px;
-                margin-left: 75px;
-            }
-            .픽스된지역 {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                position: fixed;
-                
-                /* 위에 픽스 쓰고 어디에 고정 시킬 것인가 ??? */
-                bottom: 30px;
-                right: 30px;
-                background-color: white;
-            }
-            a {
-                width: 100%;
-                height: 100%;
-                display: block;
-                border-radius: 50%;
-                text-align: center;
-                color: black;
-                text-decoration: none;
-                
-                /* a 태그 두께 a 태그용 높이 설정 */
-                line-height: 35px;
-                
-                /* 
-                사용자가 선택 못하게 하는 것 
-                드래그 못하게 함
-                복사하거나 강조와 같은 표시를 할 수 없게 만드는 것
-                특정 부분에서 텍스트 선택을 방지하고 싶을 때 사용
-                */
-                user-select: none;
-            }
         
-        </style>
         <div class="컨테이너">
             <div class="일번">first</div>
             <div class="이번">second</div>
@@ -115,12 +39,23 @@
             }
         </style>
         <div class="컨테이너2">
-            <div class="센터">
-            </div>
+            <div class="센터"></div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
             <div class="픽스된지역">
                 <!--id가 top인 태그로 점프-->
                 <a href="#TOP">TOP</a>
             </div>
-        </div>
+        
     </body>
 </html>
